@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/device",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
