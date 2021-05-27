@@ -1,77 +1,91 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <h3>Eszköz felvétel</h3>
-  <mat-form-field class="max-width">
-    <mat-label>Eszköz neve</mat-label>
-    <input
-      matInput
-      type="text"
-      placeholder="Lélegeztetőgép"
-      focus
-      formControlName="deviceName"
-      required
-    />
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Leírás</mat-label>
-    <textarea
-      placeholder="Pl. Gép"
-      formControlName="definition"
-      matInput
-      cdkTextareaAutosize
-      cdkAutosizeMinRows="1"
-      cdkAutosizeMaxRows="5"
-    ></textarea>
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Város neve</mat-label>
-    <input
-      matInput
-      placeholder="Pl. Kiskunfelegyhaza"
-      focus
-      formControlName="location"
-      required
-    />
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Gyártó</mat-label>
-    <input
-      matInput
-      placeholder="IBM"
-      focus
-      formControlName="manufacturer"
-      required
-    />
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Tuladjdonos</mat-label>
-    <input
-      matInput
-      placeholder="Pl. Doktor Papp Dani"
-      focus
-      formControlName="owner"
-      required
-    />
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Páciens neve</mat-label>
-    <input
-      matInput
-      placeholder="Erzsike néni"
-      focus
-      formControlName="patient"
-      required
-    />
-  </mat-form-field>
-  <mat-form-field class="max-width">
-    <mat-label>Eszközről kép(URL)</mat-label>
-    <input
-      matInput
-      placeholder="Pl. Fortnite"
-      focus
-      formControlName="url"
-      required
-    />
-  </mat-form-field>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Eszköz neve</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="Lélegeztetőgép"
+        focus
+        formControlName="deviceName"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Leírás</mat-label>
+      <textarea
+        placeholder="Pl. Gép"
+        formControlName="definition"
+        matInput
+        cdkTextareaAutosize
+        cdkAutosizeMinRows="1"
+        cdkAutosizeMaxRows="5"
+      ></textarea>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Város neve</mat-label>
+      <input
+        matInput
+        placeholder="Pl. Kiskunfelegyhaza"
+        focus
+        formControlName="location"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Gyártó</mat-label>
+      <input
+        matInput
+        placeholder="IBM"
+        focus
+        formControlName="manufacturer"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Tuladjdonos</mat-label>
+      <input
+        matInput
+        placeholder="Pl. Doktor Papp Dani"
+        focus
+        formControlName="owner"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Páciens neve</mat-label>
+      <input
+        matInput
+        placeholder="Erzsike néni"
+        focus
+        formControlName="patient"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content>
+    <mat-form-field class="max-width">
+      <mat-label>Eszközről kép(URL)</mat-label>
+      <input
+        matInput
+        placeholder="Pl. Fortnite"
+        focus
+        formControlName="url"
+        required
+      />
+    </mat-form-field>
+  </mat-dialog-content>
   <div style="display: flex; justify-content: flex-end">
     <button
       mat-button
