@@ -1,0 +1,37 @@
+<ng-container *ngIf="form" [formGroup]="form">
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Eszköz neve: *</mat-label>
+      <input matInput formControlName="deviceName" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Leírás: </mat-label>
+      <input matInput formControlName="definition" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Város neve: </mat-label>
+      <input matInput formControlName="location" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Gyártó: </mat-label>
+      <input matInput formControlName="manufacturer" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Tuladjdonos: </mat-label>
+      <input matInput formControlName="owner" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Páciens neve: </mat-label>
+      <input matInput formControlName="patient" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Eszközről kép(url): </mat-label>
+      <input matInput formControlName="url" />
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>Cancel</button>
+    <!-- <button mat-button (click)="update()" [disabled]="form?.invalid">Save</button> -->
+  </div>
+</ng-container>

@@ -1,0 +1,30 @@
+[mat-button] {
+  text-transform: capitalize;
+}
+
+[mat-button]:not(:last-child) {
+  margin-right: 16px;
+}
+
+a[mat-button] {
+  font-size: xx-large;
+}
+
+.active {
+  border-bottom: white 1px solid;
+  border-radius: 0;
+}
+
+mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10;
+  z-index: 2000;
+}
+.mat-toolbar {
+  background: url("https://webstockreview.net/images/ekg-clipart-red-4.png")
+    no-repeat center;
+  background-size: cover;
+  color: #fff;
+  background-size: 1600px;
+}

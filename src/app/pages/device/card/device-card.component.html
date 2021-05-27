@@ -1,0 +1,27 @@
+<div class="container">
+  <mat-card *ngIf="device" (click)="getDevice.emit(device)" appOnHover>
+    <mat-card-header>
+      <mat-card-title>{{ device.deviceName }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-subtitle>
+      <img *ngIf="device.url" [src]="device.url" alt="borito" />
+      <p>{{ device.definition }}</p>
+    </mat-card-subtitle>
+    <mat-card-content class="text"
+      >Beteg neve:
+      <div class="patient">{{ device.patient }}</div>
+    </mat-card-content>
+
+    <button
+      mat-icon-button
+      class="action-btn"
+      (click)="deleteDevice(device.id)"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+
+    <button mat-icon-button (click)="openEditDialog()" class="editer">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </mat-card>
+</div>
