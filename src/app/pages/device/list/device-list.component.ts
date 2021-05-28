@@ -13,6 +13,7 @@ import { DeviceAddComponent } from '../add/device-add.component';
 export class DeviceListComponent implements OnInit {
   title = 'Deviceok';
   list: Observable<Device[]> | null = null;
+  today = new Date();
 
   constructor(
     private service: FbBaseService<Device>,

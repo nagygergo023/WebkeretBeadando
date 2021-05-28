@@ -8,6 +8,7 @@ import { DeviceCardModule } from '../card/device-card.module';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { DeviceAddModule } from '../add/device-add.module';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [DeviceListComponent],
@@ -21,6 +22,7 @@ import { DeviceAddModule } from '../add/device-add.module';
     DeviceCardModule,
     MatButtonModule,
     DeviceAddModule,
+    MatCardModule,
   ],
 })
 export class DeviceListModule {}

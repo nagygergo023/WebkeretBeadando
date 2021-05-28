@@ -12,6 +12,12 @@ img {
 
 .action-btn {
   position: fixed;
-  bottom: 16px;
+  bottom: 70px;
   right: 16px;
+}
+
+mat-card.fixed {
+  bottom: 0;
+  justify-content: center;
+  border: 3px solid #b42c2c;
 }
